@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+
+  <title>Sign Up Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-md-6 mx-auto">
+        <div class="form-container">
+          <h2>Create An Account</h2>
+          <form action="../confirmation/confirm.html" name="signup-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputSurname" placeholder="Surname" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputOtherNames" placeholder="Other Names" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputMobileOrEmail" placeholder="Mobile number or email"
+                required>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="inputPassword" placeholder="New password" required>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm password"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="inputDateOfBirth" class="form-label">Date of Birth</label>
+              <input type="date" class="form-control" id="inputDateOfBirth" required>
+            </div>
+            <div class="mb-3">
+              <label for="inputGender" class="form-label">Gender</label>
+              <select class="form-select" id="inputGender" required>
+                <option value="" selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Non-Binary">Non-Binary</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary" id="signup-btn">Sign Up</button>
+          </form>
+
+
+          <div class="text-center">
+            <span>Already have an account? </span><a href="../login/login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+
+</html>
