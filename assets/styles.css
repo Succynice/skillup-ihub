@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Ubuntu:wght@500;700&display=swap');
+
 :root {
   --color-primary: #f46f2c;
   --color-black: #695d47;
@@ -7,11 +9,11 @@
   --color-secondary: #76beb0;
   --color-secondary-grey: #a4e8db;
   --bg-color-primary: #02280b;
-  --font-family-base: "Open Sans", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
-  --font-family-title: "Raleway", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
+  --font-family-base: "ubuntu, sans-serif";
+  --font-family-title: "ubuntu, sans-serif";
 }
+
+
 
 .header-container {
   height: 180px;
