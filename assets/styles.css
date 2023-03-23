@@ -13,13 +13,18 @@
     "sans-serif";
 }
 
-/* .header-container {
+.header-container {
   height: 180px;
   border: 1 solid red;
+  background-color: var(--color-white);
 
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   filter: drop-shadow(5px spx spx crimson);
-} */
+}
+
+main {
+  margin-top: 12rem;
+}
 
 .social-btn {
   padding-left: 0.5rem;
