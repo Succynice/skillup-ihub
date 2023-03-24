@@ -76,8 +76,14 @@ main {
   line-height: 2.5rem;
 }
 
+/* ** Card Section 2 */
+#card-tt {
+  color: var(--color-secondary);
+}
 
-
+#card-sec2 #card-ttl {
+  padding: 1re;
+}
 
 
 /* * Footer */
