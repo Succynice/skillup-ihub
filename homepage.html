@@ -40,40 +40,39 @@
   <body>
     <header>
       <section class="container-fluid header-container shadow fixed-top">
-        <div class="container-lg my-3 header-items g-5">
-          <div class="row justify-content-center">
-            <div class="col-md-6 d-none d-lg-block">
-              <p class="fw-bold">
-                <i class="bi bi-envelope-paper-heart-fill"></i>
-                skillupihub@gmail.com <span class="mx-4">+234 0000000000</span>
-              </p>
-            </div>
-
-            <!-- ** Social Icons -->
-            <div class="col-md-6 d-none d-lg-block">
-              <div class="text-end">
-                <span class="social-btn text-primary"
-                  ><a href="#"><i class="bi bi-facebook"></i></a
-                ></span>
-                <span class="text-primary social-btn"
-                  ><a href="#"><i class="bi bi-twitter"></i></a
-                ></span>
-                <span
-                  ><a
-                    class="social-btn whatsapp text-success"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="#"
-                    ><i class="bi bi-whatsapp"></i></a
-                ></span>
-                <span class="social-btn"
-                  ><a href="#" class="text-danger"
-                    ><i class="bi bi-youtube"></i></a
-                ></span>
-              </div>
-            </div>
+        <div class="row justify-content-center" id="topContact">
+          <div class="col-md-6 d-none d-lg-block">
+            <p class="fw-bold">
+              <i class="bi bi-envelope-paper-heart-fill"></i>
+              skillupihub@gmail.com <span class="mx-4">+234 0000000000</span>
+            </p>
           </div>
 
+          <!-- ** Social Icons -->
+          <div class="col-md-6 d-none d-lg-block">
+            <div class="text-end">
+              <span class="social-btn text-primary"
+                ><a href="#"><i class="bi bi-facebook"></i></a
+              ></span>
+              <span class="text-primary social-btn"
+                ><a href="#"><i class="bi bi-twitter"></i></a
+              ></span>
+              <span
+                ><a
+                  class="social-btn whatsapp text-success"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  ><i class="bi bi-whatsapp"></i></a
+              ></span>
+              <span class="social-btn"
+                ><a href="#" class="text-danger"
+                  ><i class="bi bi-youtube"></i></a
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="container-lg header-items g-5">
           <!-- ** navbar -->
           <nav class="navbar navbar-expand-lg">
             <div class="container-lg">
@@ -130,6 +129,21 @@
               </div>
             </div>
           </nav>
+
+          <!-- ** Search Box -->
+          <div class="input-group mb-5 search">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              aria-label="Search..."
+              aria-describedby="basic-addon1"
+              required
+            />
+            <button class="btn" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
         </div>
       </section>
     </header>
@@ -299,44 +313,27 @@
         <!-- **Card Section 3 -->
         <section class="shadow" id="card-sec3">
           <div class="row">
-            <div class="col-md-5">
+            <!-- ** Column for Categories -->
+            <div class="col-md-4">
               <div class="card-body p-4">
-                <h4 class="card-title fw-bolder" id="card-tt3">Calendars</h4>
+                <h4 class="card-title fw-bolder" id="card-tt3">Categories</h4>
                 <ul class="list-styled" id="card-text3">
-                  <li>Academic Calendar</li>
-                  <li>Event Calendar</li>
-                  <li>Admission Calendar</li>
-                  <li>Recruitment Calendar</li>
-                  <li>Revised Undergraduate Academic Calendar</li>
-                  <li>Amended Revised PG Academic Calendar</li>
+                  <li>Graphics & Design</li>
+                  <li>Digital Marketing</li>
+                  <li>UI/UX</li>
+                  <li>Video editing</li>
+                  <li>computer appreciation</li>
+                  <li>Intro to Programming</li>
+                  <li>Data analytics</li>
+                  <li>project management</li>
+                  <li>Cyber security</li>
+                  <li>CCTV</li>
+                  <li>Front end dev</li>
                 </ul>
-              </div>
-
-              <!-- **Card Section 3 
-                * Displays only on medium screen sizes and above
-              -->
-              <div class="card-social-icon d-none d-md-block">
-                <span class="social-btn text-primary"
-                  ><a href="#"><i class="bi bi-facebook"></i></a
-                ></span>
-                <span class="text-primary social-btn"
-                  ><a href="#"><i class="bi bi-twitter"></i></a
-                ></span>
-                <span
-                  ><a
-                    class="social-btn whatsapp text-success"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="#"
-                    ><i class="bi bi-whatsapp"></i></a
-                ></span>
-                <span class="social-btn"
-                  ><a href="#" class="text-danger"
-                    ><i class="bi bi-youtube"></i></a
-                ></span>
               </div>
             </div>
 
+            <!-- ** Column for Career -->
             <div class="col-md-3">
               <div class="card-body p-4">
                 <h4 class="card-title fw-bolder" id="card-tt3">Careers</h4>
@@ -362,7 +359,8 @@
               </div>
             </div>
 
-            <div class="col-md-4">
+            <!-- ** Column for Students -->
+            <div class="col-md-5">
               <div class="card-body p-4">
                 <h4 class="card-title fw-bolder" id="card-tt3">Students</h4>
                 <ul class="list-styled" id="card-text3">
@@ -380,6 +378,30 @@
                   <li>About Us</li>
                   <li>Leadership</li>
                 </ul>
+
+                <!-- **Card Section 3 
+                * Displays only on medium screen sizes and above
+              -->
+                <div class="card-social-icon d-none d-md-block text-end">
+                  <span class="social-btn text-primary"
+                    ><a href="#"><i class="bi bi-facebook"></i></a
+                  ></span>
+                  <span class="text-primary social-btn"
+                    ><a href="#"><i class="bi bi-twitter"></i></a
+                  ></span>
+                  <span
+                    ><a
+                      class="social-btn whatsapp text-success"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="#"
+                      ><i class="bi bi-whatsapp"></i></a
+                  ></span>
+                  <span class="social-btn"
+                    ><a href="#" class="text-danger"
+                      ><i class="bi bi-youtube"></i></a
+                  ></span>
+                </div>
               </div>
 
               <!-- **Card Section 3 
@@ -416,7 +438,7 @@
     </main>
 
     <!-- ** Footer Section -->
-    <footer class="container-fluid footer my-4">
+    <footer class="container-fluid footer mt-4">
       &copy;
       <a href="http://github.com/succynice/">2023. All rights reserved</a>
     </footer>
