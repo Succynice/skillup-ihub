@@ -14,7 +14,7 @@
 }
 
 .header-container {
-  height: 225px;
+  height: 180px;
   border: 1 solid red;
   background-color: var(--color-white);
 
@@ -22,9 +22,9 @@
   filter: drop-shadow(5px spx spx crimson);
 }
 
-main {
-  margin-top: 15rem;
-}
+/* main {
+  height: 100vh;
+} */
 
 #topContact {
   background-color: var(--bg-color-primary);
@@ -38,11 +38,6 @@ main {
   font-size: larger;
 }
 
-/* .logo {
-  width: 250px;
-  height: 60px;
-} */
-
 .brand-logo {
   width: 150px;
   height: 30px;
@@ -50,80 +45,6 @@ main {
 
 .nav-item a {
   text-shadow: 3px 3px 5px #a8a6a6;
-}
-
-.home a {
-  color: var(--color-secondary);
-}
-
-.search input {
-  padding: 10px;
-  font-weight: 600;
-}
-
-.search button {
-  padding: 0 30px;
-  color: var(--color-white);
-  background-color: var(--bg-color-primary);
-}
-
-/* nav {
-  font-weight: 500;
-} */
-
-/* * Card section */
-#card-sec {
-  background-color: #02280b;
-}
-#card-ttl {
-  color: var(--color-white);
-  font-size: 2.5rem;
-}
-
-.body-bg {
-  background-color: var(--bg-color-primary);
-}
-
-#card-text {
-  color: var(--color-white);
-  font-size: 1.3rem;
-  text-align: justify;
-
-  line-height: 2.5rem;
-}
-
-/* ** Card Section 2 */
-#card-tt {
-  color: var(--color-secondary);
-}
-
-#card-sec2 #card-tt2 {
-  width: 160px;
-  color: var(--color-white);
-  font-size: 2.5rem;
-
-  border-top: 2px solid var(--color-white);
-  border-top-color: var(--color-secondary);
-  border-top-width: 4px;
-}
-
-/* ** Card section 3 */
-#card-tt3 {
-  color: var(--bg-color-primary);
-  margin-bottom: 5px;
-}
-
-#card-text3 {
-  color: var(--color-dark-grey);
-  font-size: 1.3rem;
-}
-
-.card-social-icon {
-  margin-left: 25px;
-}
-
-.h-rule hr {
-  border-width: thick;
 }
 
 /* * Footer */
