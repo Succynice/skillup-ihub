@@ -33,9 +33,6 @@ body {
 }
 
 /* ** Login Logo and Image animation Section */
-#loginLogo-sec {
-  height: 31.5rem;
-}
 
 #loginLogo-sec .home-link a{
   color: crimson;
