@@ -38,6 +38,10 @@ body {
   color: crimson;
 }
 
+.brand-logo img:hover {
+  margin-top: 1rem;
+}
+
 #nav-student-tab,
 #nav-businessUser-tab,
 #nav-admin-tab {
@@ -89,6 +93,12 @@ body {
 
 #nav-admin {
   background-color: var(--bg-color-primary);
+  height: 500px;
+}
+
+/* to allocate space on top and bottom of the form  */
+.adminForContainer {
+  margin: 3rem auto;
 }
 
 #nav-admin h5 {
@@ -107,10 +117,10 @@ body {
   color: var(--bg-grey);
 }
 
-#nav-admin .signup-link a{
+#nav-admin .signup-link a {
   color: var(--color-secondary);
 }
 
-#nav-admin .signup-link a:hover{
+#nav-admin .signup-link a:hover {
   color: var(--bg-grey);
 }
