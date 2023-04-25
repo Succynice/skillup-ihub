@@ -53,6 +53,7 @@ body {
 
 /* ** Card section 3 */
 #card-sec3 {
+  margin: 2rem auto;
   background-color: var(--bg-grey);
 }
 
