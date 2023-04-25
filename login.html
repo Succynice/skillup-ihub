@@ -131,8 +131,20 @@
                     aria-selected="false"
                   >
                     <a href="#"
-                      ><i class="bi bi-person-workspace"></i> Business User</a
+                      ><i class="bi bi-person-workspace"></i> Business Owner</a
                     >
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-admin-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-admin"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-admin"
+                    aria-selected="false"
+                  >
+                    <a href="#"><i class="bi bi-person-fill-gear"></i> Admin</a>
                   </button>
                 </div>
               </nav>
@@ -208,9 +220,14 @@
                           LOGIN
                         </button>
                       </div>
-                      <p class="lead text-muted text-md-end">
-                        <small class="signup-link fw-bold"
-                          ><a href="#">Click here</a> to signup</small
+                      <p class="lead text-muted text-md-end m-0">
+                        <small class="signup-link"
+                          ><a href="#">Forgot password?</a></small
+                        >
+                      </p>
+                      <p class="lead text-muted text-md-end m-0">
+                        <small class="signup-link fw-bold">
+                          Don`t have an account? <a href="#">Sign Up</a></small
                         >
                       </p>
                     </form>
@@ -218,7 +235,7 @@
                 </div>
                 <!-- ** Nav Student's login ends -->
 
-                <!-- ** Nav Projects Begin -->
+                <!-- ** Nav Business owner's login Begin -->
                 <div
                   class="tab-pane fade p-5 shadow"
                   id="nav-businessUser"
@@ -288,15 +305,73 @@
                           LOGIN
                         </button>
                       </div>
-                      <p class="lead text-muted text-md-end">
-                        <small class="signup-link fw-bold"
-                          ><a href="#">Click here</a> to signup</small
+                      <p class="lead text-muted text-md-end m-0">
+                        <small class="signup-link"
+                          ><a href="#">Forgot password?</a></small
+                        >
+                      </p>
+                      <p class="lead text-muted text-md-end m-0">
+                        <small class="signup-link fw-bold">
+                          Don`t have an account? <a href="#">Sign Up</a></small
                         >
                       </p>
                     </form>
                   </div>
                 </div>
-                <!-- ** Nav Projects Ends -->
+                <!-- ** Nav Business owner's login Ends -->
+
+                <!-- ** Nav Admin's login Begins -->
+                <div
+                  class="tab-pane fade p-5 shadow"
+                  id="nav-admin"
+                  role="tabpanel"
+                  aria-labelledby="nav-admin-tab"
+                >
+                  <div class="text-center text-md-start">
+                    <h5>Admin Portal</h5>
+                    <form
+                      action="../confirmation/confirm.html"
+                      name="signup-form"
+                    >
+                      <div class="resetpsd mb-4">
+                        <input
+                          type="text"
+                          class="form-control p-3 fw-bold"
+                          id="inputMobileOrEmail"
+                          placeholder="Email or phone number"
+                          required
+                        />
+                      </div>
+
+                      <div class="resetpsd mb-3">
+                        <input
+                          type="password"
+                          class="form-control p-3 fw-bold"
+                          id="adminPassword"
+                          placeholder="Password"
+                          required
+                        />
+                      </div>
+
+                      <div class="d-grid">
+                        <button
+                          type="submit"
+                          class="btn btn-block"
+                          id="signup-btn"
+                        >
+                          Login
+                        </button>
+                      </div>
+
+                      <p class="lead text-muted text-md-end">
+                        <small class="signup-link fw-bold"
+                          ><a href="#">Did you forget password?</a></small
+                        >
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!-- ** Nav Admin's login ends -->
               </div>
             </div>
           </div>

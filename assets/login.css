@@ -34,18 +34,19 @@ body {
 
 /* ** Login Logo and Image animation Section */
 
-#loginLogo-sec .home-link a{
+#loginLogo-sec .home-link a {
   color: crimson;
 }
 
 #nav-student-tab,
-#nav-businessUser-tab {
-  font-weight: 900;
-  letter-spacing: 0.2rem;
+#nav-businessUser-tab,
+#nav-admin-tab {
+  font-weight: bold;
   font-size: larger;
 }
 #nav-student-tab a,
-#nav-businessUser-tab a {
+#nav-businessUser-tab a,
+#nav-admin-tab a {
   color: var(--bg-color-primary);
 }
 
@@ -64,12 +65,16 @@ body {
   background-color: crimson;
 }
 
+.signup-link {
+  font-size: small;
+}
+
 .signup-link a {
   color: crimson;
 }
 
 .signup-link a:hover {
-  font-size: large;
+  /* font-size: large; */
   color: var(--bg-color-primary);
 }
 
@@ -80,4 +85,32 @@ body {
 
 #nav-businessUser #submit:hover {
   background-color: var(--bg-color-primary);
+}
+
+#nav-admin {
+  background-color: var(--bg-color-primary);
+}
+
+#nav-admin h5 {
+  font-weight: bold;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+#signup-btn {
+  font-weight: bold;
+  background-color: var(--color-secondary);
+}
+
+#signup-btn:hover {
+  background-color: #2c8170;
+  color: var(--bg-grey);
+}
+
+#nav-admin .signup-link a{
+  color: var(--color-secondary);
+}
+
+#nav-admin .signup-link a:hover{
+  color: var(--bg-grey);
 }
