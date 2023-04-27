@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Ubuntu:wght@500;700&display=swap");
+
+:root {
+  --color-primary: #f46f2c;
+  --color-black: #695d47;
+  --color-white: #ffffff;
+  --color-light-grey: #ccbd90;
+  --color-dark-grey: #695d47;
+  --color-secondary: #76beb0;
+  --color-secondary-grey: #a4e8db;
+  --bg-color-primary: #02280b;
+  --font-family-base: "ubuntu, sans-serif";
+  --font-family-title: "ubuntu, sans-serif";
+}
+
+.header-container {
+  height: 180px;
+  border: 1 solid red;
+  background-color: var(--color-white);
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(5px spx spx crimson);
+}
+
+/* main {
+  height: 100vh;
+} */
+
+#topContact {
+  background-color: var(--bg-color-primary);
+
+  color: var(--color-white);
+  padding: 5px 100px 0 100px;
+}
+
+.social-btn {
+  padding-left: 0.5rem;
+  font-size: larger;
+}
+
+.brand-logo {
+  width: 150px;
+  height: 30px;
+}
+
+.nav-item a {
+  text-shadow: 3px 3px 5px #a8a6a6;
+}
+
+/* * Footer */
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--bg-color-primary);
+  font-size: larger;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--color-white);
+
+  font-weight: bold;
+}

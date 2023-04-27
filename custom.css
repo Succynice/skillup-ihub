@@ -1,0 +1,13 @@
+:root {
+  --color-primary: #f46f2c;
+  --color-black: #695d47;
+  --color-white: #ffffff;
+  --color-light-grey: #ccbd90;
+  --color-dark-grey: #695d47;
+  --color-secondary: #00ffff;
+  --color-secondary-grey: #a4e8db;
+  --bg-color-primary: #02280b;
+  --font-family-base: "ubuntu, sans-serif";
+  --font-family-title: "ubuntu, sans-serif";
+}
+

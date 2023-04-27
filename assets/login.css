@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Ubuntu:wght@500;700&display=swap");
+
+:root {
+  --color-primary: #f46f2c;
+  --color-black: #695d47;
+  --color-white: #ffffff;
+  --color-light-grey: #ccbd90;
+  --color-dark-grey: #695d47;
+  --color-secondary: #76beb0;
+  --color-secondary-grey: #a4e8db;
+  --bg-color-primary: #02280b;
+  --bg-grey: #e6f7f3;
+  --font-family-base: "ubuntu, sans-serif";
+  --font-family-title: "ubuntu, sans-serif";
+}
+
+body {
+  background-color: #dbe4e5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2384b184' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+#login-container {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+#login-container a {
+  text-decoration: none;
+}
+
+[class^="bi bi-person"] {
+  color: crimson;
+}
+
+/* ** Login Logo and Image animation Section */
+
+#loginLogo-sec .home-link a {
+  color: crimson;
+}
+
+.brand-logo img:hover {
+  margin-top: 1rem;
+}
+
+#nav-student-tab,
+#nav-businessUser-tab,
+#nav-admin-tab {
+  font-weight: bold;
+  font-size: larger;
+}
+#nav-student-tab a,
+#nav-businessUser-tab a,
+#nav-admin-tab a {
+  color: var(--bg-color-primary);
+}
+
+#nav-student,
+#nav-businessUser {
+  background-color: var(--bg-grey);
+}
+
+#submit {
+  background-color: var(--bg-color-primary);
+  color: var(--color-secondary-grey);
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: crimson;
+}
+
+.signup-link {
+  font-size: small;
+}
+
+.signup-link a {
+  color: crimson;
+}
+
+.signup-link a:hover {
+  /* font-size: large; */
+  color: var(--bg-color-primary);
+}
+
+#nav-businessUser #submit {
+  background-color: crimson;
+  color: var(--color-secondary-grey);
+}
+
+#nav-businessUser #submit:hover {
+  background-color: var(--bg-color-primary);
+}
+
+#nav-admin {
+  background-color: var(--bg-color-primary);
+  height: 500px;
+}
+
+/* to allocate space on top and bottom of the form  */
+.adminForContainer {
+  margin: 3rem auto;
+}
+
+#nav-admin h5 {
+  font-weight: bold;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+#signup-btn {
+  font-weight: bold;
+  background-color: var(--color-secondary);
+}
+
+#signup-btn:hover {
+  background-color: #2c8170;
+  color: var(--bg-grey);
+}
+
+#nav-admin .signup-link a {
+  color: var(--color-secondary);
+}
+
+#nav-admin .signup-link a:hover {
+  color: var(--bg-grey);
+}
