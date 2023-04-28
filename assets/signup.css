@@ -20,8 +20,8 @@ body {
 }
 
 #login-container {
-  margin-top: 2rem;
-  padding: 2rem;
+  /* margin-top: 2rem; */
+  /* padding: 1rem; */
 }
 
 #login-container a {
@@ -49,3 +49,6 @@ body {
   color: var(--bg-color-primary);
 }
 
+input {
+  font-weight: 500 !important;
+}
