@@ -33,6 +33,11 @@ body {
   padding: 5px 100px 0 100px;
 }
 
+#topContact p a {
+  text-decoration: none !important;
+  color: var(--color-white) !important;
+}
+
 .social-btn {
   padding-left: 0.5rem;
   font-size: larger;
@@ -60,6 +65,17 @@ body {
 #card-tt3 {
   color: var(--bg-color-primary);
   margin-bottom: 5px;
+}
+
+#card-sec3 ul li a {
+  text-decoration: none !important;
+  color: gray !important;
+  font-weight: 500;
+}
+
+#card-sec3 ul li a:hover {
+  color: var(--color-secondary) !important;
+  font-weight: 700;
 }
 
 #card-text3 {
