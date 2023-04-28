@@ -104,7 +104,7 @@ body {
 }
 
 .ratings i {
-  color: #388e3c;
+  color: var(--bg-color-primary);
 }
 
 .btn {
@@ -115,7 +115,7 @@ body {
 }
 
 .line-color {
-  color: green;
+  color: var(--bg-color-primary);
   height: 3px;
 }
 
@@ -126,4 +126,12 @@ body {
 
 .third button {
   background-color: var(--bg-color-primary);
+}
+
+.hour {
+  margin-left: 5px !important;
+}
+
+.card  h4 {
+  color: var(--color-secondary) !important;
 }
