@@ -110,18 +110,37 @@ body {
 	font-size: 12px;
 }
 
+.image {
+  margin-right: 1rem;
+}
+
+.ratings {
+  margin-left: 1rem;
+}
+
 .ratings i{
 
 	color: #388E3C;
 }
 
 .btn{
-
 	border-radius: 15px !important;
+  border-color: var(--bg-color-primary) !important;
+  border-width: 1px !important;
+  font-weight: bold !important;
 }
 
 
 .line-color{
 	color: green;
 	height: 3px;
+}
+
+.third a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+.third button {
+  background-color: var(--bg-color-primary);
 }
