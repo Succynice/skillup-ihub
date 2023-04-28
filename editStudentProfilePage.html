@@ -210,7 +210,7 @@
 
                   <div class="form-group">
                     <div class="col-xs-6">
-                      <label for="email"><h4>Facebook</h4></label>
+                      <label for="facebook"><h4>Facebook</h4></label>
                       <input
                         type="text"
                         class="form-control mb-3"
@@ -223,7 +223,7 @@
                   </div>
                   <div class="form-group">
                     <div class="col-xs-6">
-                      <label for="email"><h4>Twitter</h4></label>
+                      <label for="twitter"><h4>Twitter</h4></label>
                       <input
                         type="text"
                         class="form-control mb-3"
@@ -237,7 +237,7 @@
 
                   <div class="form-group">
                     <div class="col-xs-6">
-                      <label for="email"><h4>Instagram</h4></label>
+                      <label for="instagram"><h4>Instagram</h4></label>
                       <input
                         type="text"
                         class="form-control mb-3"
@@ -350,6 +350,20 @@
                   >
                     <a href="#"><i class="bi bi-kanban"></i> Projects</a>
                   </button>
+                  <button
+                    class="nav-link"
+                    id="nav-hire-me-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-hire-me"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-hire-me"
+                    aria-selected="false"
+                  >
+                    <a href="#"
+                      ><i class="bi bi-person-lines-fill"></i> Hire Me</a
+                    >
+                  </button>
                 </div>
               </nav>
 
@@ -453,6 +467,89 @@
                   </div>
                 </div>
                 <!-- ** Nav Projects Ends -->
+
+                <!-- ** Nav Hire Me begins -->
+                <div
+                  class="tab-pane fade mt-2"
+                  id="nav-hire-me"
+                  role="tabpanel"
+                  aria-labelledby="nav-hire-me-tab"
+                >
+                  <div class="container">
+                    <div class="card">
+                      <div class="hire card-header">
+                        <h3 class="card-title">User Information</h3>
+                      </div>
+                      <div class="card-body">
+                        <form
+                          class="form my-3"
+                          action="##"
+                          method="post"
+                          id="updateInfoForm"
+                        >
+                          <div class="form-group">
+                            <div class="col-xs-6">
+                              <label for="name"><h4>Name:</h4></label>
+                              <input
+                                type="text"
+                                class="form-control mb-3"
+                                name="full-name"
+                                id="full-name"
+                                placeholder="Enter your full name"
+                                title="Enter your full name"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="col-xs-6">
+                              <label for="email"><h4>Email Address</h4></label>
+                              <input
+                                type="email"
+                                class="form-control mb-3"
+                                name="email"
+                                id="email"
+                                placeholder="Enter your email address"
+                                title="Enter your email address"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="col-xs-6">
+                              <label for="mobile"><h4>Mobile</h4></label>
+                              <input
+                                type="text"
+                                class="form-control mb-3"
+                                name="mobile"
+                                id="previewMobile"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="col-xs-12">
+                              <br />
+                              <button
+                                class="btn btn-lg btn-success me-3"
+                                type="submit"
+                              >
+                                <i class="bi bi-save2"></i> Save
+                              </button>
+                              <button
+                                class="btn btn-lg btn-danger"
+                                type="reset"
+                              >
+                                <i class="bi bi-arrow-repeat"></i> Reset
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ** Nav Hire Me Ends -->
               </div>
             </div>
           </div>
