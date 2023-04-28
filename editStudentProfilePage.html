@@ -376,27 +376,46 @@
                   role="tabpanel"
                   aria-labelledby="nav-overview-tab"
                 >
-                  <!-- text added dynamically -->
-                  <h2 id="previewTitleText"></h2>
-                  <div class="form-group my-3" id="titletext">
-                    <textarea
-                      class="form-control round"
-                      name="about_content"
-                      id="titletext"
-                      rows="1"
-                    ></textarea>
-                  </div>
+                  <form
+                    class="form my-3"
+                    action="##"
+                    method="post"
+                    id="updateInfoForm"
+                  >
+                    <!-- text added dynamically -->
+                    <h2 id="previewTitleText"></h2>
+                    <div class="form-group my-3" id="titletext">
+                      <textarea
+                        class="form-control round"
+                        name="about_content"
+                        id="titletext"
+                        rows="1"
+                      ></textarea>
+                    </div>
 
-                  <!-- text added dynamically -->
-                  <p id="previewParagraphText"></p>
-                  <div class="form-group" id="titletext">
-                    <textarea
-                      class="form-control round"
-                      name="about_content"
-                      id="paragraphText"
-                      rows="10"
-                    ></textarea>
-                  </div>
+                    <!-- text added dynamically -->
+                    <p id="previewParagraphText"></p>
+                    <div class="form-group" id="titletext">
+                      <textarea
+                        class="form-control round"
+                        name="about_content"
+                        id="paragraphText"
+                        rows="10"
+                      ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <br />
+                        <button
+                          class="btn btn-lg btn-success me-3"
+                          type="submit"
+                        >
+                          <i class="bi bi-save2"></i> Save
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
                 <!-- ** Nav Overview begins -->
 
