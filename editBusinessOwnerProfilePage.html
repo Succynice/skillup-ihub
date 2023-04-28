@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Ubuntu:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Stylesheet -->
+    <!-- <link rel="stylesheet" href="./assets/cutom.css" /> -->
+    <link rel="stylesheet" href="./assets/editProfile.css" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5bb099442a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SkillUp-iHub Edit Student Profile Page</title>
+  </head>
+  <body>
+    <header>
+      <section class="container-fluid header-container shadow">
+        <div class="row justify-content-center" id="topContact">
+          <div class="col-md-6 d-none d-lg-block">
+            <p class="fw-bold">
+              <i class="bi bi-envelope-paper-heart-fill"></i>
+              skillupihub@gmail.com <span class="mx-4">+234 0000000000</span>
+            </p>
+          </div>
+
+          <!-- ** Social Icons -->
+          <div class="col-md-6 d-none d-lg-block">
+            <div class="text-end">
+              <span class="social-btn text-primary"
+                ><a href="#"><i class="bi bi-facebook"></i></a
+              ></span>
+              <span class="text-primary social-btn"
+                ><a href="#"><i class="bi bi-twitter"></i></a
+              ></span>
+              <span
+                ><a
+                  class="social-btn whatsapp text-success"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  ><i class="bi bi-whatsapp"></i></a
+              ></span>
+              <span class="social-btn"
+                ><a href="#" class="text-danger"
+                  ><i class="bi bi-youtube"></i></a
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="container-lg header-items g-5">
+          <!-- ** navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-lg">
+              <a class="navbar-brand" href="#"
+                ><span class="brand-logo"
+                  ><img
+                    src="./assets/skillup-logo1.png"
+                    class="img-fluid"
+                    alt="brand logo" /></span
+              ></a>
+              <!-- * toggle button for mobile nav -->
+              <button
+                class="navbar-toggler mb-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#main-nav"
+                aria-controls="main-nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- ** navbar links -->
+              <div
+                class="collapse navbar-collapse justify-content-end align-center"
+                id="main-nav"
+              >
+                <ul class="navbar-nav fs-4 fw-bold">
+                  <li class="nav-item home">
+                    <a class="nav-link" aria-current="page" href="#home"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item Potfolio">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#admin">Admin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#login">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="container-fluid profileBanner-container">
+        <div class="container-lg">
+          <div class="row justify-content-center">
+            <!-- ** Profile card reset-->
+            <!-- Interface for the feature to allow users to specify their preferred username. Going forward lets refer to this feature as feature 1 -->
+            <div class="col-lg-4">
+              <div class="profileCard">
+                <div class="text-center text-md-start">
+                  <img
+                    src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+                    class="avatar img-circle img-thumbnail mb-3"
+                    alt="avatar"
+                    id="previewProfileImageUpload"
+                  />
+                  <h6>Upload a different profile photo...</h6>
+                  <input
+                    type="file"
+                    class="text-center center-block file-upload my-2"
+                  />
+                </div>
+
+                <form
+                  class="form my-3"
+                  action="##"
+                  method="post"
+                  id="updateInfoForm"
+                >
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="first_name"><h4>First name</h4></label>
+                      <input
+                        type="text"
+                        class="form-control mb-3"
+                        name="first_name"
+                        id="PreviewFirstName"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="last_name"><h4>Last name</h4></label>
+                      <input
+                        type="text"
+                        class="form-control mb-3"
+                        name="last_name"
+                        id="previewLastName"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="last_name"><h4>Business Name</h4></label>
+                      <input
+                        type="text"
+                        class="form-control mb-3"
+                        name="user_name"
+                        id="userName"
+                        placeholder="e.g Succy, John Dio"
+                        title="enter your preferred user name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="mobile"><h4>Mobile</h4></label>
+                      <input
+                        type="text"
+                        class="form-control mb-3"
+                        name="mobile"
+                        id="previewMobile"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="facebook"><h4>Facebook</h4></label>
+                      <input
+                        type="text"
+                        class="form-control mb-3"
+                        name="facebook"
+                        id="facebook"
+                        placeholder="Enter your Facebook username"
+                        title="Enter your Facebook username"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="twitter"><h4>Twitter</h4></label>
+                      <input
+                        type="text"
+                        class="form-control mb-3"
+                        name="twitter"
+                        id="twitter"
+                        placeholder="Enter your twitter handle"
+                        title="Enter your twitter handle"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="instagram"><h4>Instagram</h4></label>
+                      <input
+                        type="text"
+                        class="form-control mb-3"
+                        name="instagram"
+                        id="instagram"
+                        placeholder="Enter your instagram username"
+                        title="Enter your instagram username"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="password"><h4>Password</h4></label>
+                      <input
+                        type="password"
+                        class="form-control mb-3"
+                        name="old_password"
+                        id="oldPassword"
+                        placeholder="Old Password"
+                        title="enter your old password."
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="password2"><h4>New password</h4></label>
+                      <input
+                        type="password"
+                        class="form-control mb-3"
+                        name="new_password"
+                        id="new-password"
+                        placeholder="New Password"
+                        title="enter your new password."
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="password2"
+                        ><h4>Verify New password</h4></label
+                      >
+                      <input
+                        type="password"
+                        class="form-control mb-3"
+                        name="verify_new_password"
+                        id="verifyNewPassword"
+                        placeholder="Verify New Password"
+                        title="enter your verified new password."
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="aboutText"
+                      ><h4>About</h4></label
+                    >
+                    <textarea
+                      class="form-control round"
+                      name="about_content"
+                      id="aboutText"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-12">
+                      <br />
+                      <button class="btn btn-lg btn-success me-3" type="submit">
+                        <i class="bi bi-save2"></i> Save
+                      </button>
+                      <button class="btn btn-lg btn-danger" type="reset">
+                        <i class="bi bi-arrow-repeat"></i> Reset
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+                <!-- End of feature 1 interface-->
+              </div>
+            </div>
+
+            <!-- ** Profile Overview -->
+            <div class="col-lg-8">
+              <nav>
+                <div
+                  class="nav nav-tabs profileNav"
+                  id="nav-tab"
+                  role="tablist"
+                >
+                  <button
+                    class="nav-link active"
+                    id="nav-overview-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-overview"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-overview"
+                    aria-selected="true"
+                  >
+                    <a href="#"><i class="bi bi-book"></i> Overview</a>
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-review-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-review"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-review"
+                    aria-selected="false"
+                  >
+                    <a href="#"
+                      ><i class="bi bi-star-fill fw-bold"></i> Reviews</a
+                    >
+                  </button>
+                </div>
+              </nav>
+
+              <!-- ** Nav tab contents -->
+              <div class="tab-content" id="nav-tabContent">
+                <!-- ** Nav Overview begins -->
+                <div
+                  class="tab-pane fade show active p-2"
+                  id="nav-overview"
+                  role="tabpanel"
+                  aria-labelledby="nav-overview-tab"
+                >
+                  <form
+                    class="form my-3"
+                    action="##"
+                    method="post"
+                    id="updateInfoForm"
+                  >
+                    <!-- text added dynamically -->
+                    <h2 id="previewTitleText"></h2>
+                    <div class="form-group my-3" id="titletext">
+                      <textarea
+                        class="form-control round"
+                        name="about_content"
+                        id="titletext"
+                        rows="1"
+                      ></textarea>
+                    </div>
+
+                    <!-- text added dynamically -->
+                    <p id="previewParagraphText"></p>
+                    <div class="form-group" id="titletext">
+                      <textarea
+                        class="form-control round"
+                        name="about_content"
+                        id="paragraphText"
+                        rows="10"
+                      ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <br />
+                        <button
+                          class="btn btn-lg btn-success me-3"
+                          type="submit"
+                        >
+                          <i class="bi bi-save2"></i> Save
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- ** Nav Overview begins -->
+
+                <!-- ** Nav Hire Me begins -->
+                <!-- <div
+                  class="tab-pane fade mt-2"
+                  id="nav-review"
+                  role="tabpanel"
+                  aria-labelledby="nav-review-tab"
+                >
+                  <div class="container">
+                    <div class="card">
+                      <div class="hire card-header">
+                        <h3 class="card-title">User Information</h3>
+                      </div>
+                      <div class="card-body">
+                        <form
+                          class="form my-3"
+                          action="##"
+                          method="post"
+                          id="updateInfoForm"
+                        >
+                          <div class="form-group">
+                            <div class="col-xs-6">
+                              <label for="name"><h4>Name:</h4></label>
+                              <input
+                                type="text"
+                                class="form-control mb-3"
+                                name="full-name"
+                                id="full-name"
+                                placeholder="Enter your full name"
+                                title="Enter your full name"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="col-xs-6">
+                              <label for="email"><h4>Email Address</h4></label>
+                              <input
+                                type="email"
+                                class="form-control mb-3"
+                                name="email"
+                                id="email"
+                                placeholder="Enter your email address"
+                                title="Enter your email address"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="col-xs-6">
+                              <label for="mobile"><h4>Mobile</h4></label>
+                              <input
+                                type="text"
+                                class="form-control mb-3"
+                                name="mobile"
+                                id="previewMobile"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="col-xs-12">
+                              <br />
+                              <button
+                                class="btn btn-lg btn-success me-3"
+                                type="submit"
+                              >
+                                <i class="bi bi-save2"></i> Save
+                              </button>
+                              <button
+                                class="btn btn-lg btn-danger"
+                                type="reset"
+                              >
+                                <i class="bi bi-arrow-repeat"></i> Reset
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- ** Nav Hire Me Ends -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ** Footer Section -->
+    <footer class="container-fluid footer mt-4">
+      &copy;
+      <a href="http://github.com/succynice/">2023. All rights reserved</a>
+    </footer>
+
+    <!--! Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ** tooltip script -->
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
+  </body>
+</html>
