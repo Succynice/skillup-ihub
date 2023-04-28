@@ -17,7 +17,7 @@
     />
 
     <!-- External Stylesheet -->
-    <link rel="stylesheet" href="./assets/cutom.css" />
+    <!-- <link rel="stylesheet" href="./assets/cutom.css" /> -->
     <link rel="stylesheet" href="./assets/userProfile.css" />
 
     <!-- Bootstrap CSS v5.2.1 -->
@@ -40,7 +40,7 @@
   </head>
   <body>
     <header>
-      <section class="container-fluid header-container shadow fixed-top">
+      <section class="container-fluid header-container shadow">
         <div class="row justify-content-center" id="topContact">
           <div class="col-md-6 d-none d-lg-block">
             <p class="fw-bold">
@@ -148,7 +148,7 @@
                 />
                 <div class="card-body my-3">
                   <h2 class="card-title">Success Chikezie</h2>
-                  <h4 class="card-subtitle text-muted">Succynice</h4>
+                  <h4 class="card-subtitle text-muted">@Succynice</h4>
                   <p class="card-text my-3">
                     Some example text some example text. John Doe is an
                     architect and engineer Some example text some example text.
@@ -494,12 +494,36 @@
 
                 <!-- ** Nav Hire Me begins -->
                 <div
-                  class="tab-pane fade"
+                  class="tab-pane fade mt-2"
                   id="nav-hire-me"
                   role="tabpanel"
                   aria-labelledby="nav-hire-me-tab"
                 >
-                  ...
+                  <div class="container">
+                    <div class="card">
+                      <div class="hire card-header">
+                        <h3 class="card-title">User Information</h3>
+                      </div>
+                      <div class="card-body">
+                        <p><strong>Full Name:</strong> John Smith</p>
+                        <p>
+                          <strong>Email Address:</strong> john.smith@example.com
+                        </p>
+                        <p><strong>Phone Number:</strong> 555-1234</p>
+                      </div>
+                    </div>
+
+                    <div class="text-center py-3">
+                      <button type="button" class="btn hire-me-btn">
+                        <!-- Bootstrap Mailto Button -->
+                        <a
+                          href="mailto:example@example.com"
+                          class="hire-me-btn-link pb-4"
+                          ><i class="bi bi-send-plus"></i> Hire Me</a
+                        >
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <!-- ** Nav Hire Me Ends -->
               </div>
