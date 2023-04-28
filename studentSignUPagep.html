@@ -77,9 +77,9 @@
     </header>
     <main>
       <section class="container-fluid" id="login-container">
-        <div class="container-lg">
+        <div class="container-lg mt-1 mt-md-5">
           <div class="row justify-content-center align-items-md-center">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-10">
               <div class="text-center shadow p-5" id="loginLogo-sec">
                 <a class="navbar-brand" href="#"
                   ><span class="brand-logo"
@@ -90,7 +90,7 @@
                 ></a>
 
                 <!-- ** Form Section Starts -->
-                <div class="form-container">
+                <div class="form-container p-md-3">
                   <h2>Create An Account</h2>
                   <form
                     action="../confirmation/confirm.html"
@@ -149,6 +149,28 @@
                         placeholder="Confirm password"
                         required
                       />
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputGender" class="form-label">Category</label>
+                      <select class="form-select" id="inputGender" required>
+                        <option value="" selected class="fw-bold">Select Category</option>
+                        <option value="Graphic-Design">Graphic Design</option>
+                        <option value="Digital-Marketing">Digital Marketing</option>
+                        <option value="UI/UX">UI/UX</option>
+                        <option value="Video-Editing">
+                          Video Editing
+                        </option>
+                        <option value="Computer-Appreciation">Computer Appreciation</option>
+                        <option value="Intro-To-Programming">Intro To Programming</option>
+                        <option value="Data-Analytic">Data Analytic</option>
+                        <option value="Project-Management">Project Management</option>
+                        <option value="CCTV">CCTV</option>
+                        <option value="Frontend-Development">Front End Development</option>
+                        <option value="Backend-Development">Backend Development</option>
+                        <option value="Phone-Repair">Phone Repair</option>
+                        <option value="Mobile-App-Dev">Mobile App Development</option>
+                        <option value="LAN-Networking">LAN Networking</option>
+                      </select>
                     </div>
                     <div class="mb-3">
                       <label for="inputDateOfBirth" class="form-label"

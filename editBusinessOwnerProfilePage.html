@@ -185,7 +185,7 @@
                   </div>
                   <div class="form-group">
                     <div class="col-xs-6">
-                      <label for="last_name"><h4>User name</h4></label>
+                      <label for="last_name"><h4>Business Name</h4></label>
                       <input
                         type="text"
                         class="form-control mb-3"
@@ -340,28 +340,16 @@
                   </button>
                   <button
                     class="nav-link"
-                    id="nav-projects-tab"
+                    id="nav-review-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#nav-projects"
+                    data-bs-target="#nav-review"
                     type="button"
                     role="tab"
-                    aria-controls="nav-projects"
-                    aria-selected="false"
-                  >
-                    <a href="#"><i class="bi bi-kanban"></i> Projects</a>
-                  </button>
-                  <button
-                    class="nav-link"
-                    id="nav-hire-me-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-hire-me"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-hire-me"
+                    aria-controls="nav-review"
                     aria-selected="false"
                   >
                     <a href="#"
-                      ><i class="bi bi-person-lines-fill"></i> Hire Me</a
+                      ><i class="bi bi-star-fill fw-bold"></i> Reviews</a
                     >
                   </button>
                 </div>
@@ -419,80 +407,12 @@
                 </div>
                 <!-- ** Nav Overview begins -->
 
-                <!-- ** Nav Projects Begin -->
-                <div
-                  class="tab-pane fade my-5"
-                  id="nav-projects"
-                  role="tabpanel"
-                  aria-labelledby="nav-projects-tab"
-                >
-                  <div class="text-center">
-                    <h2>
-                      <i class="bi bi-stars fw-bold"></i> Previously Done
-                      Projects
-                    </h2>
-                    <p class="lead fw-bold">
-                      kindly Upload your resume and other evidences of your
-                      previous projects
-                    </p>
-                  </div>
-
-                  <!-- Upload documents -->
-                  <div class="text-center text-md-start my-3">
-                    <form
-                      action="#"
-                      method="POST"
-                      enctype="multipart/form-data"
-                      class="mt-3"
-                    >
-                      <div class="mb-3">
-                        <label for="pdfFile" class="form-label fw-bold"
-                          >Upload Resume</label
-                        >
-                        <input
-                          type="file"
-                          class="form-control w-75 mb-3"
-                          id="pdfFile"
-                          name="pdfFile"
-                          accept=".pdf"
-                        />
-
-                        <label for="pdfFile" class="form-label fw-bold"
-                          >Upload Cover Letter</label
-                        >
-                        <input
-                          type="file"
-                          class="form-control w-75 mb-3"
-                          id="pdfFile"
-                          name="pdfFile"
-                          accept=".pdf"
-                        />
-
-                        <label for="image" class="form-label fw-bold"
-                          >Upload Project Images</label
-                        >
-                        <input
-                          class="form-control w-75"
-                          type="file"
-                          id="image"
-                          name="image"
-                          accept="image/*"
-                        />
-                      </div>
-                      <button type="submit" class="btn btn-success">
-                        Upload
-                      </button>
-                    </form>
-                  </div>
-                </div>
-                <!-- ** Nav Projects Ends -->
-
                 <!-- ** Nav Hire Me begins -->
-                <div
+                <!-- <div
                   class="tab-pane fade mt-2"
-                  id="nav-hire-me"
+                  id="nav-review"
                   role="tabpanel"
-                  aria-labelledby="nav-hire-me-tab"
+                  aria-labelledby="nav-review-tab"
                 >
                   <div class="container">
                     <div class="card">
@@ -567,7 +487,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- ** Nav Hire Me Ends -->
               </div>
             </div>
