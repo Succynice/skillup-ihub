@@ -108,9 +108,29 @@
                       >Home</a
                     >
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#about"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >About</a
+                    >
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDarkDropdownMenuLink"
+                    >
+                      <li><a class="dropdown-item" href="#">About Us</a></li>
+                      <li>
+                        <a class="dropdown-item" href="./teamGalleryPage.html"
+                          >Team</a
+                        >
+                      </li>
+                    </ul>
                   </li>
+
                   <li class="nav-item Potfolio">
                     <a class="nav-link" href="#portfolio">Portfolio</a>
                   </li>
@@ -304,11 +324,14 @@
                   <div class="form-group">
                     <div class="col-xs-12">
                       <br />
-                      <button class="btn btn-lg btn-success me-3" type="submit">
+                      <button class="btn btn-lg btn-success" type="submit">
                         <i class="bi bi-save2"></i> Save
                       </button>
-                      <button class="btn btn-lg btn-danger" type="reset">
+                      <button class="btn btn-lg btn-danger mx-4" type="reset">
                         <i class="bi bi-arrow-repeat"></i> Reset
+                      </button>
+                      <button class="btn btn-lg btn-success mt-2 mt-md-0" type="button">
+                        <i class="bi bi-arrow-left"></i> <a href="./studentProfileDark.html" style="color: white;">Back</a>
                       </button>
                     </div>
                   </div>
