@@ -18,7 +18,7 @@
 
     <!-- External Stylesheet -->
     <!-- <link rel="stylesheet" href="./assets/cutom.css" /> -->
-    <link rel="stylesheet" href="./assets/businessOwnerProfile.css" />
+    <link rel="stylesheet" href="./assets/studentProfileDark.css" />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -32,11 +32,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+
     <script
       src="https://kit.fontawesome.com/5bb099442a.js"
       crossorigin="anonymous"
     ></script>
-    <title>SkillUp-iHub Business Owner Profile Page</title>
+    <title>SkillUp-iHub Student Profile Page</title>
   </head>
   <body>
     <header>
@@ -108,7 +109,6 @@
                       >Home</a
                     >
                   </li>
-
                   <li class="nav-item dropdown">
                     <a
                       class="nav-link dropdown-toggle"
@@ -167,10 +167,13 @@
                   style="width: 100%"
                 />
                 <div class="card-body my-3">
-                  <h2 class="card-title">Tedmix Inc</h2>
+                  <h2 class="card-title">Success Chikezie</h2>
+                  <h4 class="card-subtitle mt-2">@Succynice</h4>
                   <p class="card-text my-3">
                     Some example text some example text. John Doe is an
                     architect and engineer Some example text some example text.
+                    John Doe is an architect and engineer Some example text some
+                    example text. John Doe is an architect and engineer
                   </p>
                   <span><a href="#" class="btn d-block">Edit Profile</a></span>
                 </div>
@@ -191,16 +194,18 @@
                 >
                   <div class="text-center">
                     <span class="twitter"
-                      ><a href="#"><i class="bi bi-twitter"></i></a
+                      ><a href="#"><i class="bi bi-twitter text-primary"></i></a
                     ></span>
                     <span class="facebook"
-                      ><a href="#"><i class="bi bi-facebook"></i></a
+                      ><a href="#"
+                        ><i class="bi bi-facebook text-primary"></i></a
                     ></span>
                     <span class="whatsapp"
                       ><a href="#"><i class="bi bi-whatsapp"></i></a
                     ></span>
                     <span class="instagram"
-                      ><a href="#"> <i class="bi bi-instagram"></i> </a
+                      ><a href="#">
+                        <i class="bi bi-instagram"></i> </a
                     ></span>
                     <span class="github"
                       ><a href="#"><i class="bi bi-github"></i></a
@@ -227,11 +232,20 @@
                     aria-controls="nav-overview"
                     aria-selected="true"
                   >
-                    <a href="#"
-                      ><i class="bi bi-journal-album fw-bold"></i> Overview</a
-                    >
+                    <a href="#"><i class="bi bi-book"></i> Overview</a>
                   </button>
-
+                  <button
+                    class="nav-link"
+                    id="nav-projects-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-projects"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-projects"
+                    aria-selected="false"
+                  >
+                    <a href="#"><i class="bi bi-kanban"></i> Projects</a>
+                  </button>
                   <button
                     class="nav-link"
                     id="nav-review-tab"
@@ -242,11 +256,22 @@
                     aria-controls="nav-review"
                     aria-selected="false"
                   >
+                    <a href="#"><i class="bi bi-star"></i> Reviews</a>
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-hire-me-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-hire-me"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-hire-me"
+                    aria-selected="false"
+                  >
                     <a href="#"
-                      ><i class="bi bi-star-fill fw-bold"></i> Reviews</a
+                      ><i class="bi bi-person-lines-fill"></i> Hire Me</a
                     >
                   </button>
-
                   <!-- ** Theme Toggle -->
                   <div class="form-check form-switch mx-auto themeToggle">
                     <input
@@ -257,8 +282,9 @@
                   </div>
                 </div>
               </nav>
+
               <!-- ** Nav tab contents -->
-              <div class="tab-content" id="nav-tabContent">
+              <div class="tab-content m-3" id="nav-tabContent">
                 <!-- ** Nav Overview begins -->
                 <div
                   class="tab-pane fade show active p-2"
@@ -266,7 +292,7 @@
                   role="tabpanel"
                   aria-labelledby="nav-overview-tab"
                 >
-                  <h2>Hello There; Welcome</h2>
+                  <h2>Hello! Welcome</h2>
                   <p class="lead text-justify">
                     I'm a Software Engineer and a Product Designer who currently
                     works as a product manager at Tribcon Company. I'm
@@ -278,6 +304,97 @@
                   </p>
                 </div>
                 <!-- ** Nav Overview begins -->
+
+                <!-- ** Nav Projects Begin -->
+                <div
+                  class="tab-pane fade my-5"
+                  id="nav-projects"
+                  role="tabpanel"
+                  aria-labelledby="nav-projects-tab"
+                >
+                  <div class="text-center">
+                    <h2>
+                      <i class="bi bi-stars fw-bold"></i> Previously Done
+                      Projects
+                    </h2>
+                    <p class="lead fw-bold intro">
+                      Feel free to browse through my previously done projects
+                    </p>
+                  </div>
+
+                  <div
+                    id="projectCarouselIndicators"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#projectCarouselIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectCarouselIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectCarouselIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="./assets/projectCarouselImages/Property 1=Frame 51.svg"
+                          class="d-block w-100"
+                          alt="UI Design Image"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./assets/projectCarouselImages/Property 1=Frame 52.svg"
+                          class="d-block w-100"
+                          alt="UI Design Image"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="..." />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#projectCarouselIndicators"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#projectCarouselIndicators"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- ** Nav Projects Ends -->
 
                 <!-- ** Nav Review begins -->
                 <div
@@ -293,7 +410,7 @@
                           <i class="bi bi-stars fw-bold"></i> Performance
                           Reviews
                         </h2>
-                        <p class="lead fw-bold">
+                        <p class="lead fw-bold intro">
                           What my previous clients said about my performance
                         </p>
                       </div>
@@ -397,6 +514,41 @@
                   </section>
                 </div>
                 <!-- ** Nav Review Ends -->
+
+                <!-- ** Nav Hire Me begins -->
+                <div
+                  class="tab-pane fade mt-2"
+                  id="nav-hire-me"
+                  role="tabpanel"
+                  aria-labelledby="nav-hire-me-tab"
+                >
+                  <div class="container">
+                    <div class="card">
+                      <div class="hire card-header">
+                        <h3 class="card-title">User Information</h3>
+                      </div>
+                      <div class="card-body">
+                        <p><strong>Full Name:</strong> John Smith</p>
+                        <p>
+                          <strong>Email Address:</strong> john.smith@example.com
+                        </p>
+                        <p><strong>Phone Number:</strong> 555-1234</p>
+                      </div>
+                    </div>
+
+                    <div class="text-center py-3">
+                      <button type="button" class="btn hire-me-btn">
+                        <!-- Bootstrap Mailto Button -->
+                        <a
+                          href="mailto:example@example.com"
+                          class="hire-me-btn-link pb-4"
+                          ><i class="bi bi-send-plus"></i> Hire Me</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ** Nav Hire Me Ends -->
               </div>
             </div>
           </div>

@@ -1,0 +1,159 @@
+:root {
+  --color-white: #ffffff;
+  --color-secondary: #76beb0;
+  --color-secondary-grey: #a4e8db;
+  --color-light-blue: #2fd5ff;
+  --bg-color-primary: #02280b;
+  --bg-grey: #fafffe;
+  --font-family-base: "ubuntu, sans-serif";
+  --font-family-title: "ubuntu, sans-serif";
+}
+
+.Potfolio a {
+  color: var(--color-secondary);
+}
+
+.profileBanner-container {
+  margin-top: 2rem;
+}
+
+body {
+  background: url("./images/bg-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  background-color: var(--color-white);
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(5px spx spx crimson);
+}
+
+#topContact {
+  background-color: var(--bg-color-primary);
+
+  color: var(--color-white);
+  padding: 5px 100px 0 100px;
+}
+
+.social-btn {
+  padding-left: 0.5rem;
+  font-size: larger;
+}
+
+.brand-logo {
+  width: 150px;
+  height: 30px;
+}
+
+.profileCard img {
+  border-radius: 50%;
+}
+
+.profileCard h2 {
+  color: var(--color-secondary-grey);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  word-spacing: 10px;
+}
+
+.profileCard h4 {
+  font-size: larger;
+  color: var(--color-secondary-grey);
+}
+
+.profileCard a {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bolder;
+  color: var(--color-secondary-grey);
+}
+
+.profileCard .card-body p {
+  color: var(--bg-grey);
+  font-weight: bold;
+}
+
+.whatsapp a {
+  color: greenyellow !important;
+}
+
+.instagram a {
+  color: rgb(255, 0, 128) !important;
+}
+
+.github a {
+  color: var(--color-white) !important;
+}
+
+.social-media-icons span {
+  font-size: x-large;
+  padding-right: 0.5rem;
+  transition: 1s;
+}
+
+.social-media-icons span:hover {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+.card-body span a {
+  padding: 0.5rem;
+  width: 100%;
+  color: var(--color-white);
+  background-color: var(--color-light-blue);
+}
+
+/* *** Profile Navigation */
+.profileNav a {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bolder;
+  color: var(--color-light-blue);
+}
+
+.profileNav a:active {
+  color: var(--bg-color-primary);
+}
+
+#customSwitchLarge {
+  height: 20px;
+  width: 50px;
+  color: red;
+  border: 3px solid var(--bg-color-primary);
+}
+
+#nav-overview {
+  background-color: var(--bg-grey);
+}
+
+#reviews {
+  margin-top: 1rem;
+  border: 0.3rem solid var(--bg-color-primary);
+  border-radius: 1rem;
+}
+
+#nav-projects h2,
+.intro,
+#nav-review h2,
+intro {
+  color: var(--bg-grey);
+}
+
+/* * Footer */
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--bg-color-primary);
+  font-size: larger;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--color-white);
+
+  font-weight: bold;
+}
