@@ -8,6 +8,7 @@
   --color-dark-grey: #695d47;
   --color-secondary: #76beb0;
   --color-secondary-grey: #a4e8db;
+  --color-light-blue: #2fd5ff;
   --bg-color-primary: #02280b;
   --bg-grey: #fafffe;
   --font-family-base: "ubuntu, sans-serif";
@@ -125,7 +126,7 @@ body {
 
 .third a, .third i {
   text-decoration: none;
-  color: var(--color-secondary);
+  color: var(--color-light-blue);
 }
 
 .third button {
