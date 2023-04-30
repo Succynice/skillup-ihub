@@ -99,6 +99,66 @@ body {
   margin-top: 11rem;
 }
 
+/* ** 
+# About Us Page Styles
+*/
+#card-sec {
+  background-color: #02280b;
+}
+
+/* #card-sec {
+  background-color: #02280b;
+} */
+
+#card-ttl {
+  color: var(--color-white);
+  font-size: 2.5rem;
+}
+
+.body-bg {
+  background-color: var(--bg-color-primary);
+}
+
+#card-text {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  text-align: justify;
+
+  line-height: 2.5rem;
+}
+
+#card-tt {
+  color: var(--color-secondary);
+}
+
+#card-sec2 #card-tt2 {
+  width: 160px;
+  color: var(--color-white);
+  font-size: 2.5rem;
+
+  border-top: 2px solid var(--color-white);
+  border-top-color: var(--color-secondary);
+  border-top-width: 4px;
+}
+
+.card-image img {
+  transition: 1s;
+}
+
+.card-image img:hover {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+.about-us-title,
+.about-us-name {
+  background-color: var(--bg-grey);
+}
+
+/* 
+# About Us Page Styles Ends
+*/
+
 /* * Footer */
 .footer {
   width: 100%;
