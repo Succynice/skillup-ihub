@@ -52,7 +52,7 @@ body {
   text-shadow: 3px 3px 5px #a8a6a6;
 }
 
-.contact-us a {
+.about-us > a {
   color: var(--color-secondary);
 }
 
